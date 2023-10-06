@@ -1,0 +1,240 @@
+body{
+    background-image: url(img/fondoo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+a{
+    color: rgb(89, 255, 136);
+}
+
+main{
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.contenedor__todo{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+/*Posterior*/
+
+.caja__trasera{
+    width: 100%;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    background-color: rgba(89, 255, 136, 0.1);
+}
+
+.caja__trasera div{
+    margin: 100px 40px;
+    color: white;
+    transition: 1.2s;
+}
+
+.caja__trasera-usuario{
+    opacity: 0;
+}
+
+.caja__trasera div p,
+.caja__trasera div button{
+    margin-top: 30px;
+}
+
+.contenedor__todo div h3{
+    font-weight: 400;
+    font-size: 26px;
+    font-family: 'Shanti', sans-serif; 
+}
+
+.caja__trasera button{
+    padding:  10px 40px;
+    border: 2px solid #fff;
+    color: white;
+    background: transparent;
+    border-radius: 7px;
+    font-weight: 680;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.caja__trasera button:hover{
+    background-color: white;
+    color: rgb(89, 255, 136);
+    transition: all 0.2s ease;
+    transform: scale(1.1);
+}
+
+.caja__trasera button:active {
+    box-shadow: inset 0px 0.1em 0.6em #fff;
+    background-color: transparent;
+    color: #fff;
+    transform: scale(0.99);
+  }
+
+/*Formularios*/
+
+.cnt__botones{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.contenedor__usuario-ayudante{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    top: -200px;
+    left: 10px;
+    transition: left .7s cubic-bezier(0.175, 0.585, 0.32, 1.275);
+}
+.contenedor__usuario-ayudante form{
+    width: 100%;
+    padding: 80px 20px;
+    background-color: rgb(255, 247, 233);
+    position: absolute;
+    border-radius: 20px;
+}
+
+.contenedor__usuario-ayudante form h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(89, 255, 136);
+    font-family: 'Shanti', sans-serif; 
+}
+
+/*Form-inputs*/
+
+.contenedor__usuario-ayudante form input{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background-color: #fff1f1;
+    color: gray;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+.contenedor__usuario-ayudante form input::placeholder{
+    color: gray;
+    opacity: 1;
+}
+
+/*Form buttons*/
+
+.contenedor__usuario-ayudante form .boton{
+    transition: .5s;
+    margin: 0px 5px;
+    font-weight: 800;
+    padding: 10px 33px;
+    margin-top: 40px;
+    border: none;
+    font-size: 14px;
+    color: rgb(89, 255, 136);
+    background: rgb(255, 247, 233);
+    cursor: pointer;
+    border: solid 2px rgb(89, 255, 136);
+    border-radius: 5px;
+}
+
+.contenedor__usuario-ayudante form .boton:hover{
+    transition: .5s;
+    background: rgb(89, 255, 136);
+    text-decoration: none;
+    color: white;
+    transform: scale(1.1);
+}
+
+/*Form text*/
+
+#imp__text{
+    margin-top: 15px;
+    font-size: 15px;
+    color: gray;
+}
+
+.log-reg__bt{
+    color: gray;
+    font-size: 20px;
+    margin-left: 5px;
+    text-decoration: underline;
+    transition: .2s;
+    background: none;
+    border: none;
+}
+
+.log-reg__bt:hover{
+    color: rgb(89, 255, 136);
+    text-decoration: underline;
+    margin-left: 0;
+    transition: .2s;
+}
+
+/*Disposiciones*/
+
+.formulario__usuario{
+    opacity: 1;
+    display: block;
+}
+
+.formulario__usuario #reg__usuario{
+    display: none;
+}
+
+.formulario__ayudante{
+    display: none;
+}
+
+.formulario__ayudante #reg__ayudante{
+    display: none;
+}
+
+/*RWD*/
+
+@media screen and (max-width:850px ){
+    main{
+        margin-top: 58px;
+    }
+    .caja__trasera{
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .caja__trasera div{
+        margin: 0;
+        position: absolute;
+    }
+    /*form*/
+
+    .contenedor__usuario-ayudante{
+        top: -10px;
+        margin: auto;
+        left: 0px;
+    }
+
+    .contenedor__usuario-ayudante form{
+        position: relative;
+    }
+
+    .caja__trasera-usuario{
+        opacity: 1;
+        display: none;
+    } 
+    .caja__trasera-ayudante{
+        opacity: 1;
+    }
+}
