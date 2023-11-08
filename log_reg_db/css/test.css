@@ -58,25 +58,25 @@ body{
   background-position: center;
 }
 .vi{
-  background-image: url(../img/violencia_intrafamiliar.jpg);
+  background-image: url(img/violencia_intrafamiliar.jpg);
 }
 .vf{
-  background-image: url(../img/violencia_fisica.jpg);
+  background-image: url(img/violencia_fisica.jpg);
 }
 .vg{
-  background-image: url(../img/violencia-de-genero.jpg);
+  background-image: url(img/violencia-de-genero.jpg);
 }
 .vp{
-  background-image: url(../img/violencia_psicologica.jpg);
+  background-image: url(img/violencia_psicologica.jpg);
 }
 .vs{
-  background-image: url(../img/violencia_sexual.jpg);
+  background-image: url(img/violencia_sexual.jpg);
 }
 .ma{
-  background-image: url(../img/maltrato_animal.jpg);
+  background-image: url(img/maltrato_animal.jpg);
 }
 .ca{
-  background-image: url(../img/contaminacion_ambiental.jpg);
+  background-image: url(img/contaminacion_ambiental.jpg);
 }
 .card{
   margin: 0px 50px;
